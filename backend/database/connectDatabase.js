@@ -15,7 +15,7 @@ module.exports = async ({ sync }) => {
     console.log('Connected to Database')
     if (sync)
       await mongoose.connection.db.dropDatabase()
-    await createAdmin()
+    // await createAdmin()
   } catch (e) {
     console.error(e)
     process.exit(1)

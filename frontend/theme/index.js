@@ -14,10 +14,10 @@ theme.breakpoints = {
 // palette
 theme.palette = {
   primary: {
-    dark: Color('#4b92fd').darken(0.15).hex(),
-    main: '#4b92fd',
-    light: Color('#4b92fd').lighten(0.2).hex(),
-    extraLight: Color('#4b92fd').lighten(0.46).hex(),
+    dark: Color('#04bfa6').darken(0.15).hex(),
+    main: '#04bfa6',
+    light: Color('#04bfa6').lighten(0.2).hex(),
+    extraLight: Color('#04bfa6').lighten(0.46).hex(),
     contrastText: '#fff'
   },
   secondary: {
