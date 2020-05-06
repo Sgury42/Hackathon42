@@ -5,8 +5,8 @@ import { userJoiSchema } from '../../../validation'
 import { useDispatch, useSelector } from 'react-redux'
 import { setObject } from '../../redux/actions'
 // components
-import { Grid, useTheme, TextField, Card, CardContent, Chip, MenuItem } from '@material-ui/core'
-import { MyButton } from '../core'
+import { Grid, useTheme, TextField, Card, CardContent, Chip, MenuItem, Button } from '@material-ui/core'
+import { BlockLink } from '../core'
 import req from '../../redux/req'
 
 export default ({ user, onClose }) => {
@@ -165,13 +165,7 @@ export default ({ user, onClose }) => {
                   SelectProps={{
                     displayEmpty: false,
                     multiple: true,
-                    renderValue: selected => (
-                      <div>
-                        {selected.map(value => (
-                          <Chip size="small" key={value} label={value} style={{ marginRight: 4 }}/>
-                        ))}
-                      </div>
-                    )
+                    renderValue: selected => selected.join(', ')
                   }}
                 >
                   {tags.data.map(tag => (
@@ -181,9 +175,11 @@ export default ({ user, onClose }) => {
               }
             </Grid>
             <Grid item>
-              <MyButton color="primary" type="submit">
-                Register
-              </MyButton>
+              <BlockLink href="/groups">
+                <Button variant="contained" color="primary" type="submit">
+                  Register
+                </Button>
+              </BlockLink>
             </Grid>
           </Grid>
         </form>

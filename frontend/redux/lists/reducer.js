@@ -3,11 +3,11 @@ import _ from 'lodash'
 const initialState = {
   tags: {
     data: [
-      { label: 'Summer Body', color: 'red' },
-      { label: 'ReactJs', color: 'red' },
-      { label: 'Javascript', color: 'red' },
-      { label: 'C', color: 'red' },
-      { label: 'C++', color: 'red' },
+      { label: 'Summer Body', color: '#ff9800' },
+      { label: 'ReactJs', color: '#2196f3' },
+      { label: 'Javascript', color: '#ffc107' },
+      { label: 'C', color: '#424242' },
+      { label: 'C++', color: '#222' },
     ]
   },
   groups: {
@@ -16,25 +16,25 @@ const initialState = {
         name: 'Javascript coders',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
         users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
-        tags: [{ label: 'ReactJs', color: 'red' }, { label: 'Javascript', color: 'red' }]
+        tags: [{ label: 'ReactJs', color: '#2196f3' }, { label: 'Javascript', color: '#ffc107' }]
       },
       {
         name: 'Javascript coders',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
         users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
-        tags: [{ label: 'ReactJs', color: 'red' }, { label: 'Javascript', color: 'red' }]
+        tags: [{ label: 'ReactJs', color: '#2196f3' }, { label: 'Javascript', color: '#ffc107' }]
       },
       {
         name: 'Javascript coders',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
         users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
-        tags: [{ label: 'ReactJs', color: 'red' }, { label: 'Javascript', color: 'red' }]
+        tags: [{ label: 'ReactJs', color: '#2196f3' }, { label: 'Javascript', color: '#ffc107' }]
       },
       {
         name: 'Javascript coders',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
         users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
-        tags: [{ label: 'ReactJs', color: 'red' }, { label: 'Javascript', color: 'red' }]
+        tags: [{ label: 'ReactJs', color: '#2196f3' }, { label: 'Javascript', color: '#ffc107' }]
       },
     ]
   }

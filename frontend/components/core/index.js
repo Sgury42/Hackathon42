@@ -1,7 +1,6 @@
 // core
 export { default as Animated } from './Animated'
 export { default as AnimatedWhenVisible } from './AnimatedWhenVisible'
-export { default as MyButton } from './MyButton'
 export { default as MyTypography } from './MyTypography'
 export { default as BlockLink } from './BlockLink'
 export { default as SnackbarProvider } from './SnackbarProvider'

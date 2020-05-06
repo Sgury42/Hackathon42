@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Typography, useTheme, Grid, Hidden, TextField, Card, CardMedia, CardContent, makeStyles, CardActionArea, CardActions} from '@material-ui/core'
-import { Button, AnimatedWhenVisible, Banner, BlockLink, MyTypography, MyButton} from '../components/core'
+import { Typography, useTheme, Grid, Hidden, TextField, Card, CardMedia, CardContent, makeStyles, CardActionArea, CardActions, Button } from '@material-ui/core'
+import { AnimatedWhenVisible, Banner, BlockLink, MyTypography } from '../components/core'
 import queryString from 'query-string'
 
 const useStyles = makeStyles({
@@ -40,7 +40,7 @@ export default () => {
                   Find your perfect team and work together to achieve your goal.
                 </Typography>
                 <BlockLink href="/register">
-                  <MyButton color="primary">Find my team now !</MyButton>
+                  <Button variant="contained" color="primary">Find my team now !</Button>
                 </BlockLink>
               </Grid>
             </Grid>

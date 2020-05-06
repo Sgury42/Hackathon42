@@ -50,7 +50,7 @@ export default ({ palette, typography, shape, spacing, shadows, insetShadows }) 
       backgroundColor: palette.contrast.medium,
       color: palette.text.secondary,
       fontWeight: typography.fontWeightMedium,
-      height: 28,
+      height: 26,
       //boxShadow: shadows[0]
     },
     icon: {
@@ -192,7 +192,7 @@ export default ({ palette, typography, shape, spacing, shadows, insetShadows }) 
   // APPBAR
   MuiAppBar: {
     root: {
-      boxShadow: `0 1px ${palette.contrast.medium}`,
+      boxShadow: 'none',
     },
     colorDefault: {
       backgroundColor: palette.background.paper
@@ -200,7 +200,7 @@ export default ({ palette, typography, shape, spacing, shadows, insetShadows }) 
   },
   MuiCard: {
     root: {
-      border: `solid 1px ${palette.contrast.high}`,
+      borderBottom: `solid 3px ${palette.contrast.high}`,
       boxShadow: 'none',
     }
   },
@@ -214,20 +214,27 @@ export default ({ palette, typography, shape, spacing, shadows, insetShadows }) 
       transition: '.2s',
       textTransform: 'none',
       textDecoration: 'none',
-      fontSize: 16
+      fontSize: 16,
     },
     contained: {
-      boxShadow: shadows[0],
+      boxShadow: 'none',
       '&:hover': {
-        transform: 'translateY(-3px)', boxShadow: shadows[1],
+        transform: 'translateY(-3px)',
+        boxShadow: 'none',
         '@media (hover: none)': {
-          boxShadow: insetShadows[0]
+          boxShadow: 'none'
         },
       },
       '&:active': {
         transform: 'translateY(-3px) scale(.96)',
-        boxShadow: insetShadows[0]
+        boxShadow: 'none'
       },
+    },
+    containedPrimary: {
+      backgroundColor: palette.primary.main,
+      '&:hover': {
+        backgroundColor: palette.primary.main,
+      }
     },
     sizeLarge: {
       padding: '12px 18px'

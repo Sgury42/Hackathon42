@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Toolbar, useTheme, AppBar } from '@material-ui/core'
-import { MyTypography } from '../../core'
+import { MyTypography, BlockLink } from '../../core'
 
 export default ({ children }) => {
   const theme = useTheme()
@@ -9,7 +9,9 @@ export default ({ children }) => {
     <React.Fragment>
       <AppBar color="default">
         <Toolbar variant="dense">
-          <MyTypography medium>Hackaton</MyTypography>
+          <BlockLink href="/">
+            <MyTypography variant="h6" medium>P2P Coaching</MyTypography>
+          </BlockLink>
         </Toolbar>
       </AppBar>
     </React.Fragment>

@@ -13,13 +13,13 @@ const useStyles = makeStyles(theme => ({
   })
 }))
 
-export default ({ name, color, size, ...rest}) => {
+export default ({ name, color, size, className, ...rest}) => {
   if (!size) size = 24
   const classes = useStyles({ size })
   const theme = useTheme()
   const path = mdiIcons[name]
   return (
-    <svg className={classes.icon} viewBox="0 0 24 24" fill={color ? theme.palette[color].main : 'currentColor'} {...rest}>
+    <svg className={[classes.icon, className].join(' ')} viewBox="0 0 24 24" fill={color ? theme.palette[color].main : 'currentColor'} {...rest}>
       <path d={path}/>
     </svg>
   )

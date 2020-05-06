@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
-import { MyTypography, BlockLink, MyButton } from './'
-import { useTheme } from '@material-ui/core'
+import { MyTypography, BlockLink } from './'
+import { useTheme, Button } from '@material-ui/core'
 import queryString from 'query-string'
 
 export default ({ pages, page, onClick, style, useURL }) => {
@@ -35,7 +35,7 @@ export default ({ pages, page, onClick, style, useURL }) => {
           let linkQuery = { ...query }
           linkQuery.page = n
           return (
-            <MyButton
+            <Button
               color="primary"
               component={useURL ? BlockLink : undefined}
               href={pathname + '?' + queryString.stringify(linkQuery)}
@@ -47,7 +47,7 @@ export default ({ pages, page, onClick, style, useURL }) => {
               style={{ padding: '2px 0', minWidth: 0, width: 30, height: 30, marginRight: 4  }}
             >
               {n}
-            </MyButton>
+            </Button>
           )
         } else {
           return null

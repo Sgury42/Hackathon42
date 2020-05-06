@@ -57,7 +57,7 @@ theme.palette = {
     extraLight: Color('#f44336').lighten(0.5).hex(),
   },
   background: {
-    default: '#f8f8f8',
+    default: '#f5f5f5',
     paper: '#fff'
   },
   text: {
@@ -93,39 +93,39 @@ theme.typography = {
   fontWeightMediumTitle: 500,
   fontWeightBoldTitle: 600,
   h1: {
-    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
     fontSize: '3.75rem',
     fontWeight: 400,
   },
   h2: {
-    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
     fontSize: '2.2rem',
     fontWeight: 400,
   },
   h3: {
-    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
     fontSize: '2rem',
     fontWeight: 400,
   },
   h4: {
-    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
     fontSize: '1.8rem',
     fontWeight: 400,
   },
   h5: {
-    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
     fontSize: '1.5rem',
     fontWeight: 400,
   },
   h6: {
-    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
     fontWeight: 400,
   },
 }
 
 // other
 theme.shape = {
-  borderRadius: 4,
+  borderRadius: 3,
   borderSize: 2
 }
 theme.cardSpacing = 3
