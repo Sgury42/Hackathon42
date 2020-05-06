@@ -96,7 +96,11 @@ const defaultState = {
         { label: 'C', color: '#424242' },
         { label: 'C++', color: '#222' },
         { label: 'Health', color: '#3dc1d3'},
-        { label: 'Pharmacy', color: '#63cdda'}
+        { label: 'Pharmacy', color: '#63cdda'},
+        { label: 'Sport', color: '#574b90'},
+        { label: 'Workout', color: '#786fa6'},
+        { label: 'Building management', color: '#303952'},
+        { label: 'Green/ecologie', color: '#3dc1d3'},
       ]
     },
     groups: {
@@ -108,23 +112,41 @@ const defaultState = {
           tags: [{ label: 'Health', color: '#3dc1d3' }, { label: 'ReactJs', color: '#e66767' }, { label: 'Javascript', color: '#f5cd79' }]
         },
         {
-          name: 'Make health solution available to everyone',
-          description: 'We are three startups proposing tree amazing solutions to make health solution easier to reach.',
-          users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }, { firstname: 'Alexendre', lastname: 'Caroff'}],
-          tags: [{ label: 'ReactJs', color: '#e66767' }, { label: 'Javascript', color: '#f5cd79' }]
+          name: 'Sport toward better health',
+          description: 'Startups in sport field',
+          users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Yama', lastname: 'Saraj' }, { firstname: 'Jessica', lastname: 'Jones' }, { firstname: 'Alexendre', lastname: 'Caroff' }],
+          tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Workout', color: '#786fa6'}]
         },
         {
-          name: 'Javascript coders',
+          name: 'Lorem ipsum dolor sit amet',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
           users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
-          tags: [{ label: 'ReactJs', color: '#2196f3' }, { label: 'Javascript', color: '#ffc107' }]
+          tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Javascript', color: '#f5cd79' }]
         },
         {
-          name: 'Javascript coders',
+          name: 'Lorem ipsum dolor sit amet',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
           users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
-          tags: [{ label: 'ReactJs', color: '#2196f3' }, { label: 'Javascript', color: '#ffc107' }]
+          tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Pharmacy', color: '#63cdda'}, { label: 'ReactJs', color: '#e66767' }, { label: 'Javascript', color: '#f5cd79' }]
         },
+        {
+          name: 'Lorem ipsum dolor sit amet',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
+          users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
+          tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'ReactJs', color: '#e66767' }, { label: 'Javascript', color: '#f5cd79' }]
+        },
+        {
+          name: 'Lorem ipsum dolor sit amet',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
+          users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }, { firstname: 'John', lastname: 'Doe' }],
+          tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Sport', color: '#574b90'}, { label: 'Javascript', color: '#f5cd79' }]
+        },
+        {
+          name: 'Lorem ipsum dolor sit amet',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
+          users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
+          tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Pharmacy', color: '#63cdda'}, { label: 'Javascript', color: '#f5cd79' }]
+        }
       ]
     },
     Chat: [
