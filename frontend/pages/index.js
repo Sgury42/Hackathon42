@@ -35,9 +35,9 @@ export default () => {
           <AnimatedWhenVisible animation="fromLeft">
             <Grid container alignItems="flex-start">
               <Grid item xs={12} md={6}>
-                <Typography variant="h1" style={{ marginBottom: 8 }}><b>P2P</b><br/>peer 2 peer and team work for everyone</Typography>
+                <Typography variant="h1" style={{ marginBottom: 8 }}><b>P2P</b><br/>peer 2 peer Mentorship</Typography>
                 <Typography variant="h6" style={{ opacity: .75, marginBottom: 16 }}>
-                  Find your perfect team and work together to achieve your goal.
+                  Find your peer to peer team to grow your startup stronger and faster.
                 </Typography>
                 <BlockLink href="/register">
                   <Button variant="contained" color="primary">Find my team now !</Button>

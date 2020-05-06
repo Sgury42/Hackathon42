@@ -1,7 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { useTheme, Container, Avatar, Grid, Chip, Card, CardContent, TextField, CardHeader, CardActions } from '@material-ui/core'
+import { useTheme, Container, Grid, Chip, Card, CardContent, TextField, CardHeader, CardActions, Button } from '@material-ui/core'
 import { TextLink, MyTypography, Icon, BlockLink } from '../components/core'
+import { Problems, Goals, Avatar } from '../components/app'
 
 export default () => {
   const theme = useTheme()
@@ -32,7 +33,7 @@ export default () => {
                 {group.users.map(user => (
                   <Grid item>
                     <BlockLink href={'/user'}>
-                      <Avatar style={{ width: 42, height: 42, fontSize: 20 }}>{user.firstname.charAt(0)}</Avatar>
+                      <Avatar user={user}/>
                     </BlockLink>
                   </Grid> 
                 ))}
@@ -41,31 +42,10 @@ export default () => {
           </Grid>
         </Grid>
         <Grid item xs={4}>
-          <Card>
-            <CardContent>
-              <MyTypography variant="h6" medium>⭐ Goals</MyTypography>
-            </CardContent>
-            <CardActions>
-              <Grid container spacing={1}>
-                <Grid item xs={12}>
-                  <TextField multiline fullWidth label="What is your current goal..." placeHolder=""/>
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField fullWidth label="Deadline (MM/DD/YYYY)" placeHolder=""/>
-                </Grid>
-              </Grid>
-            </CardActions>
-          </Card>
+          <Goals/>
         </Grid>
         <Grid item xs={4}>
-          <Card>
-            <CardContent>
-              <MyTypography variant="h6" medium>😞 Problems</MyTypography>
-            </CardContent>
-            <CardActions>
-              <TextField multiline fullWidth label="Have you a problem ?" placeHolder=""/>
-            </CardActions>
-          </Card>
+          <Problems/>
         </Grid>
         <Grid item xs={4}>
           <Card>
@@ -73,7 +53,14 @@ export default () => {
               <MyTypography variant="h6" medium>💬 Chat</MyTypography>
             </CardContent>
             <CardActions>
-              <TextField multiline fullWidth label="Type some text..." placeHolder=""/>
+              <Grid container spacing={1}>
+                <Grid item xs={12}>
+                  <TextField multiline fullWidth label="Type some text..." placeHolder=""/>
+                </Grid>
+                <Grid item xs={12}>
+                  <Button fullWidth variant="contained" color="primary">Send</Button>
+                </Grid>
+              </Grid>
             </CardActions>
           </Card>
         </Grid>
