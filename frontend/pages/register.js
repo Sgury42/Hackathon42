@@ -6,7 +6,9 @@ export default () => {
   const theme = useTheme()
   return (
     <Container>
-      <UserFormCard/>
+      <div style={{ maxWidth: 600, margin: '0 auto' }}>
+        <UserFormCard/>
+      </div>
     </Container>
   )
 }
