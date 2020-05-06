@@ -1,2 +1,5 @@
 export { default as Layout } from './layout/Layout'
 export { default as UserFormCard } from './UserFormCard'
+export { default as Problems } from './Problems'
+export { default as Avatar } from './Avatar'
+export { default as Goals } from './Goals'

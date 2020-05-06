@@ -13,7 +13,7 @@ const defaultState = {
       description: 'We are three startups proposing tree amazing solutions to make health solution easier to reach.',
       users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }, { firstname: 'Alexendre', lastname: 'Caroff'}],
       tags: [{ label: 'Health', color: '#3dc1d3' }, { label: 'ReactJs', color: '#e66767' }, { label: 'Javascript', color: '#f5cd79' }],
-      prolems: [
+      problems: [
         {
           owner: { firstname: 'Sarah', lastname: 'Gury' },
           name: 'Sanitary authorization permit',

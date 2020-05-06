@@ -13,7 +13,7 @@ export default () => {
           <Grid item xs={12}>
             <Card>
               <CardContent>
-                <TextLink href="/group" medium>{group.name}</TextLink>
+                <TextLink variant="h5" href="/group" medium guttersBottom>{group.name}</TextLink>
                 <MyTypography variant="body2" color="textSecondary">{group.description}</MyTypography>
                 <Grid container spacing={1} style={{ marginTop: theme.spacing(1) }}>
                   {group.tags.map(tag => (
