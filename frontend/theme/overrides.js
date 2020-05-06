@@ -200,8 +200,8 @@ export default ({ palette, typography, shape, spacing, shadows, insetShadows }) 
   },
   MuiCard: {
     root: {
-      boxShadow: shadows[1],
-      //boxShadow: 'none',
+      border: `solid 1px ${palette.contrast.high}`,
+      boxShadow: 'none',
     }
   },
   MuiLink: {

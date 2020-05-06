@@ -7,7 +7,7 @@ import withRedux from "next-redux-wrapper";
 import { updateObject, fetchCurrentUser } from '../redux/actions'
 import Head from 'next/head'
 // components
-import { SnackbarProvider, AppLoading } from '../components/core'
+import { SnackbarProvider } from '../components/core'
 import { Layout } from '../components/app'
 // theme
 import theme from '../theme'
@@ -53,7 +53,6 @@ export default withRedux(makeStore, { debug: false })(class MyApp extends App {
           <MuiThemeProvider theme={theme}>
             <SnackbarProvider>
               <CssBaseline/>
-              <AppLoading/>
               <Layout>
                 <Component {...pageProps} />
               </Layout>

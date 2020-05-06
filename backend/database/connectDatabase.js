@@ -1,6 +1,7 @@
 const config = require('../config')
 const createAdmin = require('./createAdmin')
 const initModels = require('../models')
+const insertDefault = require('./insertDefault')
 
 module.exports = async ({ sync }) => {
   initModels()
@@ -13,9 +14,11 @@ module.exports = async ({ sync }) => {
       useCreateIndex: true
     })
     console.log('Connected to Database')
-    if (sync)
+    if (config.hardSync) {
       await mongoose.connection.db.dropDatabase()
-    await createAdmin()
+      // await createAdmin()
+      // await insertDefault()
+    }
   } catch (e) {
     console.error(e)
     process.exit(1)

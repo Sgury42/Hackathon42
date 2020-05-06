@@ -24,8 +24,8 @@ privateRoutes.use((req, res, next) => {
 })
 
 const routePaths = [
-  'article',
   'user',
+  'tag'
 ]
 
 for (let path of routePaths) {

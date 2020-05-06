@@ -57,7 +57,7 @@ theme.palette = {
     extraLight: Color('#f44336').lighten(0.5).hex(),
   },
   background: {
-    default: '#f9f9f9',
+    default: '#f8f8f8',
     paper: '#fff'
   },
   text: {
@@ -140,18 +140,6 @@ theme.props = {
   MuiInput: {
     disableUnderline: true
   },
-  // MuiFilledInput: {
-  //   disableUnderline: true
-  // },
-  // MuiFormControl: {
-  //   variant: 'filled'
-  // },
-  // MuiTextField: {
-  //   variant: 'filled'
-  // },
-  MuiInputLabel: {
-    //shrink: true
-  }
 }
 
 // breakpoints

@@ -4,11 +4,12 @@ module.exports = async () => {
   console.log(user)
   if (!user) {
     await User.create({
-      username: 'admin',
+      email: 'admin@admin.fr',
       firstname: 'Admin',
       lastname: 'Admin',
+      description: 'Looking for awesome mates',
       password: 'admin',
-      email: 'admin@admin.fr',
+      city: 'Paris',
       role: 'admin',
     })
   }

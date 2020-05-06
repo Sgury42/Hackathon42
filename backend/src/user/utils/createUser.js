@@ -1,11 +1,14 @@
-module.exports = async ({ firstName, lastName, email, username }) => {
+module.exports = async ({ firstname, lastname, email, tags, city, description, password }) => {
   const { User } = mongoose.models
   try {
     const user = await User.create({
-      username,
-      firstName,
-      lastName,
-      email
+      firstname,
+      lastname,
+      email,
+      tags,
+      description,
+      city,
+      password
     })
     return user
   } catch (e) {
