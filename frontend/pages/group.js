@@ -10,7 +10,7 @@ export default () => {
   const chatMessages = useSelector(s => s.lists.chatMessages)
   return (
     <Container maxWidth={false}>
-      <Grid container spacing={2}>
+      <Grid container spacing={3}>
         <Grid item xs={12}>
           <Grid container spacing={1}>
             <Grid item xs={12}>
@@ -41,13 +41,13 @@ export default () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <Goals/>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <Problems/>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={12} md={4}>
           <Card>
             <CardContent>
               <MyTypography variant="h6" medium>💬 Chat</MyTypography>
