@@ -18,9 +18,18 @@ export default () => {
               <CardContent>
                 <div style={{ display: 'flex'}}>
                   <Avatar user={goal.owner}/>
-                  <div style={{ flexGrow: 1, marginLeft: theme.spacing(1) }}>
-                    <MyTypography medium>{goal.name}</MyTypography>
-                    <MyTypography variant="body2">{goal.description}</MyTypography>
+                  <div style={{ flexGrow: 1, marginLeft: theme.spacing(1.5) }}>
+                    <Grid container spacing={1}>
+                      <Grid item xs={12}>
+                        <MyTypography medium>{goal.name}</MyTypography>
+                      </Grid>
+                      <Grid item xs={12}>
+                        <MyTypography variant="body2">{goal.description}</MyTypography>
+                      </Grid>
+                      <Grid item>
+                        <Chip style={{ marginTop: 4 }} label={`Deadline: ${goal.deadline}`}></Chip>
+                      </Grid>
+                    </Grid>
                   </div>
                 </div>
               </CardContent>
