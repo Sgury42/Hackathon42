@@ -17,10 +17,10 @@ export default () => {
     <React.Fragment>
       <Banner
         style={{
-        marginTop: -100, padding: '180px 0 100px 0',
-        position: 'relative'
+          marginTop: -100, padding: '180px 0 100px 0',
+          position: 'relative',
+          color: 'white',
         }}
-        textColor="white"
       >
         <div style={{
           position:'absolute',
@@ -56,13 +56,13 @@ export default () => {
       </Banner>
       <Banner
         style={{
-        marginTop: -100, padding: '180px 0 100px 0',
+        padding: '100px 0 100px 0',
         position: 'relative'
         }}
         textColor="white"
       >
           <AnimatedWhenVisible animation="fromLeft">
-            <Grid container spacing={2}>
+            <Grid container spacing={3}>
             <Grid item xs={4}>
             <Card className={classes.root}>
               <CardActionArea>
