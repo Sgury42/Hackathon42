@@ -10,7 +10,7 @@ export default ({ children }) => {
       <AppBar color="default">
         <Toolbar variant="dense">
           <BlockLink href="/">
-            <MyTypography variant="h6" medium>P2P Coaching</MyTypography>
+            <MyTypography variant="h6" medium>P2P Mentorship</MyTypography>
           </BlockLink>
         </Toolbar>
       </AppBar>
