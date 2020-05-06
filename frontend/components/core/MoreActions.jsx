@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { IconButton, Menu, MenuItem, Dialog, Grid, DialogActions, DialogTitle, DialogContent, useTheme, ListItemIcon } from '@material-ui/core'
-import { MoreIcon, Card, Button, ConfirmationModal, MyTypography } from './'
+import { Icon, Card, Button, ConfirmationModal, MyTypography } from './'
 import { useDispatch } from 'react-redux'
 import { createConfirmationModal } from '../../redux/actions'
 
@@ -17,7 +17,7 @@ export default ({ actions }) => {
   return (
     <React.Fragment>
       <IconButton onClick={e => setAnchor(e.currentTarget)}>
-        <MoreIcon/>
+        <Icon name="mdiPlus"/>
       </IconButton>
       <Menu
         anchorEl={anchor}

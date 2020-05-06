@@ -1,6 +1,44 @@
 import _ from 'lodash'
 
-const initialState = {}
+const initialState = {
+  tags: {
+    data: [
+      { label: 'Summer Body', color: 'red' },
+      { label: 'ReactJs', color: 'red' },
+      { label: 'Javascript', color: 'red' },
+      { label: 'C', color: 'red' },
+      { label: 'C++', color: 'red' },
+    ]
+  },
+  groups: {
+    data: [
+      {
+        name: 'Javascript coders',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
+        users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
+        tags: [{ label: 'ReactJs', color: 'red' }, { label: 'Javascript', color: 'red' }]
+      },
+      {
+        name: 'Javascript coders',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
+        users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
+        tags: [{ label: 'ReactJs', color: 'red' }, { label: 'Javascript', color: 'red' }]
+      },
+      {
+        name: 'Javascript coders',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
+        users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
+        tags: [{ label: 'ReactJs', color: 'red' }, { label: 'Javascript', color: 'red' }]
+      },
+      {
+        name: 'Javascript coders',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
+        users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
+        tags: [{ label: 'ReactJs', color: 'red' }, { label: 'Javascript', color: 'red' }]
+      },
+    ]
+  }
+}
 
 const listsReducer = (state = initialState, action) => {
   const { type, listName, list, item, itemId, idField, field, desc } = action

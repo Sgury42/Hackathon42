@@ -39,10 +39,10 @@ const useStyles = makeStyles(theme => ({
   }),
   // other
   medium: {
-    padding: '10px 16px',
+    padding: '8px 16px',
   },
   large: {
-    padding: '12px 18px'
+    padding: '10px 18px'
   },
   active: {
     boxShadow: theme.insetShadows[0] + ' !important'

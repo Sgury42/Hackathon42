@@ -1,7 +1,7 @@
 module.exports = () => {
   const modelPaths = [
     'user',
-    'article',
+    'tag',
   ]
   for (let path of modelPaths) {
     require(`./src/${path}/model`)

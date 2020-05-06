@@ -1,8 +1,8 @@
 import React from 'react'
-import { ChevronUpIcon } from './'
+import { Icon } from './'
 
 export default ({ active }) => {
   return (
-    <ChevronUpIcon style={{ fontSize: 16, transform: active ? 'rotate(180deg)' : undefined, transition: '.2s' }}/>
+    <Icon name="mdiChevronUp" style={{ fontSize: 16, transform: active ? 'rotate(180deg)' : undefined, transition: '.2s' }}/>
   )
 }
