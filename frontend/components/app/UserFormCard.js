@@ -174,9 +174,9 @@ export default ({ user, onClose }) => {
                 </TextField>
               }
             </Grid>
-            <Grid item>
+            <Grid item xs={12}>
               <BlockLink href="/groups">
-                <Button variant="contained" color="primary" type="submit">
+                <Button fullWidth variant="contained" color="primary" type="submit">
                   Register
                 </Button>
               </BlockLink>
