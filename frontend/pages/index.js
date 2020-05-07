@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Typography, useTheme, Grid, Hidden, TextField, Card, CardMedia, CardContent, makeStyles, CardActionArea, CardActions, Button } from '@material-ui/core'
-import { AnimatedWhenVisible, Banner, BlockLink, MyTypography } from '../components/core'
+import { AnimatedWhenVisible, Banner, BlockLink, MyTypography, Icon } from '../components/core'
 import queryString from 'query-string'
 
 const HomeCard = ({ image, title, text }) => {
@@ -29,12 +29,13 @@ export default () => {
     <React.Fragment>
       <Banner
         style={{
-          marginTop: -100, padding: '180px 0 100px 0',
+          marginTop: -100, padding: '200px 0 120px 0',
           position: 'relative',
           color: 'white',
+          background: `url(/images/network.png) ${theme.palette.secondary.main}`,
         }}
       >
-        <div style={{
+        {/* <div style={{
           position:'absolute',
           top: -80,
           left: -30,
@@ -42,7 +43,7 @@ export default () => {
           bottom: 0,
           transform: 'rotate(1deg)',
           background: `linear-gradient(126deg, #04BFA6 0%, rgba(98,137,244,1) 40%, #04BFA6 100%)`
-        }}/>
+        }}/> */}
         <div style={{ position: 'relative'}}>
           <AnimatedWhenVisible animation="fromLeft">
             <Grid container alignItems="flex-start">
@@ -58,7 +59,7 @@ export default () => {
             </Grid>
           </AnimatedWhenVisible>
           <Hidden smDown>
-            <div style={{ zIndex: 100, position: 'absolute', right: -50, bottom: -350, height: 480 }}>
+            <div style={{ zIndex: 100, position: 'absolute', right: -50, bottom: -150, height: 300 }}>
               <AnimatedWhenVisible animation="fromRight" partially>
                 <img style={{ height: 300 }} src="images/illustrations/undraw_shared_workspace_hwky.svg" alt="Augmenter votre productivité"/>
               </AnimatedWhenVisible>
@@ -68,42 +69,83 @@ export default () => {
       </Banner>
       <Banner
         style={{
-        padding: '180px 0 100px 0',
+        padding: '100px 0 100px 0',
         position: 'relative'
         }}
-        textColor="white"
       >
-          <AnimatedWhenVisible animation="fromLeft" partially>
-            <Grid container justify="center" spacing={2}>
-              <Grid item xs={8} sm={4}>
-                <HomeCard
-                  title="Find team support"
-                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus lectus, dictum a libero a, bibendum fermentum urna. Pellentesque ultricies facilisis nibh nec pulvinar."
-                  image="/images/illustrations/undraw_stand_out_1oag.svg"
-                />
+          <AnimatedWhenVisible animation="zoomIn" partially>
+            <Grid container spacing={3}>
+              <Grid item xs={6}>
+                <div style={{ margin: '0 auto', maxWidth: 400, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <div style={{ padding: 20, backgroundColor: theme.palette.primary.extraLight, borderRadius: '100%' }}>
+                    <Icon name="mdiAccountGroupOutline" size={80} color="primary"/>
+                  </div>
+                  <MyTypography variant="h2" color="primary" align="center" gutterBottom>Find team support</MyTypography>
+                  <MyTypography align="center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</MyTypography>
+                </div>
               </Grid>
-              <Grid item xs={8} sm={4}>
-                <HomeCard
-                  title="Find team support"
-                  image="/images/illustrations/undraw_status_update_jjgk.svg"
-                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus lectus, dictum a libero a, bibendum fermentum urna. Pellentesque ultricies facilisis nibh nec pulvinar."
-                />
-              </Grid>
-              <Grid item xs={8} sm={4}>
-                <HomeCard
-                  title="Find team support"
-                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus lectus, dictum a libero a, bibendum fermentum urna. Pellentesque ultricies facilisis nibh nec pulvinar."
-                  image="/images/illustrations/undraw_Group_chat_unwm.svg"
-                />
+              <Grid item xs={6}>
+                <div style={{ margin: '0 auto', maxWidth: 400, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <div style={{ padding: 20, backgroundColor: theme.palette.primary.extraLight, borderRadius: '100%' }}>
+                    <Icon name="mdiHandshake" size={80} color="primary"/>
+                  </div>
+                  <MyTypography variant="h2" color="primary" align="center" gutterBottom>Find team support</MyTypography>
+                  <MyTypography align="center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</MyTypography>
+                </div>
               </Grid>
             </Grid>
           </AnimatedWhenVisible>
-          {/* <Hidden smDown>
-            <div style={{ zIndex: 100, position: 'absolute', right: -50, bottom: -150, height: 480 }}>
-              <AnimatedWhenVisible animation="fromRight" partially>
-              </AnimatedWhenVisible>
+      </Banner>
+      <Banner
+        style={{
+          padding: '100px 0 100px 0',
+          position: 'relative',
+          backgroundColor: theme.palette.contrast.low,
+        }}
+      >
+          <AnimatedWhenVisible animation="fromLeft" partially>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+              <div style={{ padding: 20, backgroundColor: theme.palette.secondary.extraLight, borderRadius: '100%' }}>
+                <Icon name="mdiAccountGroupOutline" size={100} color="secondary"/>
+              </div>
+              <div style={{ marginLeft: theme.spacing(5) }}>
+                <MyTypography variant="h2" color="secondary" align="left" gutterBottom>Find team support</MyTypography>
+                <MyTypography style={{ maxWidth: 700 }} align="left">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</MyTypography>
+              </div>
             </div>
-          </Hidden> */}
+          </AnimatedWhenVisible>
+      </Banner>
+      <Banner
+        style={{
+          padding: '100px 0 100px 0',
+          position: 'relative',
+          // backgroundColor: theme.palette.contrast.low,
+        }}
+      >
+          <AnimatedWhenVisible animation="fromRight" partially>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+              <div style={{ marginRight: theme.spacing(5) }}>
+                <MyTypography variant="h2" color="primary" align="right" gutterBottom>Find team support</MyTypography>
+                <MyTypography style={{ maxWidth: 700 }} align="right">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</MyTypography>
+              </div>
+              <div style={{ padding: 20, backgroundColor: theme.palette.primary.extraLight, borderRadius: '100%' }}>
+                <Icon name="mdiAccountGroupOutline" size={100} color="primary"/>
+              </div>
+            </div>
+          </AnimatedWhenVisible>
+      </Banner>
+      <Banner
+        style={{
+          padding: '100px 0 100px 0',
+          position: 'relative',
+          backgroundColor: theme.palette.contrast.low,
+        }}
+      >
+        {/* <Gird container>
+          <div style={{ width: 100, height: 100, borderRadius: '100%'}}>
+            
+          </div>
+        </Gird> */}
       </Banner>
     </React.Fragment>
   )

@@ -19,8 +19,10 @@ export default ({ name, color, size, className, ...rest}) => {
   const theme = useTheme()
   const path = mdiIcons[name]
   return (
-    <svg className={[classes.icon, className].join(' ')} viewBox="0 0 24 24" fill={color ? theme.palette[color].main : 'currentColor'} {...rest}>
-      <path d={path}/>
-    </svg>
+    <div style={{ height: size, width: size }}>
+      <svg className={[classes.icon, className].join(' ')} viewBox="0 0 24 24" fill={color ? theme.palette[color].main : 'currentColor'} {...rest}>
+        <path d={path}/>
+      </svg>
+    </div>
   )
 }

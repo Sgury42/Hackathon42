@@ -14,17 +14,17 @@ theme.breakpoints = {
 // palette
 theme.palette = {
   primary: {
-    dark: Color('#04bfa6').darken(0.15).hex(),
-    main: '#04bfa6',
-    light: Color('#04bfa6').lighten(0.2).hex(),
-    extraLight: Color('#04bfa6').lighten(0.46).hex(),
+    dark: Color('#1bb978').darken(0.15).hex(),
+    main: '#1bb978',
+    light: Color('#1bb978').lighten(0.2).hex(),
+    extraLight: Color('#1bb978').lighten(1.2).hex(),
     contrastText: '#fff'
   },
   secondary: {
     dark: Color('#5491e9').darken(0.1).hex(),
     main: '#5491e9',
     light: Color('#5491e9').lighten(0.7).hex(),
-    extraLight: Color('#5491e9').lighten(1.2).hex(),
+    extraLight: Color('#5491e9').lighten(.46).hex(),
     contrastText: '#fff'
   },
   tertiary: {

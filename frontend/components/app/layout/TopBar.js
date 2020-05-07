@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Toolbar, useTheme, AppBar } from '@material-ui/core'
+import { Toolbar, useTheme, AppBar, Container } from '@material-ui/core'
 import { MyTypography, BlockLink } from '../../core'
 
 export default ({ children }) => {
@@ -9,9 +9,11 @@ export default ({ children }) => {
     <React.Fragment>
       <AppBar color="default">
         <Toolbar variant="dense">
-          <BlockLink href="/">
-            <MyTypography variant="h6" medium>P2P Mentorship</MyTypography>
-          </BlockLink>
+          {/* <Container> */}
+            <BlockLink href="/">
+              <MyTypography variant="h6">P2P Mentorship</MyTypography>
+            </BlockLink>
+          {/* </Container> */}
         </Toolbar>
       </AppBar>
     </React.Fragment>
