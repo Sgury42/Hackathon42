@@ -15,7 +15,7 @@ const defaultState = {
       tags: [{ label: 'Health', color: '#3dc1d3' }, { label: 'ReactJs', color: '#e66767' }, { label: 'Javascript', color: '#f5cd79' }],
       problems: [
         {
-          owner: { firstname: 'Sarah', lastname: 'Gury' },
+          author: { firstname: 'Sarah', lastname: 'Gury' },
           name: 'Sanitary authorization permit',
           description: 'We need a sanitary Permit for our reusable masks.',
           comments: [
@@ -26,7 +26,7 @@ const defaultState = {
           ]
         },
         {
-          owner: { firstname: 'John', lastname: 'Doe' },
+          author: { firstname: 'John', lastname: 'Doe' },
           name: 'Social distancing',
           description: 'We need help to find solutions to make our product still available during COVID-19 crisis',
           comments: [
@@ -39,7 +39,7 @@ const defaultState = {
       ],
       goals: [
         {
-          owner: { firstname: 'Sarah', lastname: 'Gury' },
+          author: { firstname: 'Sarah', lastname: 'Gury' },
           name: 'launching our third product',
           description: 'We had the chance to work with amazing team that helpt us building this new pack of basics for COVID-19, goal now: making it available for public ASAP',
           deadline: '06/15/20',
@@ -55,7 +55,7 @@ const defaultState = {
           ]
         },
         {
-          owner: { firstname: 'John', lastname: 'Doe' },
+          author: { firstname: 'John', lastname: 'Doe' },
           name: 'make our first million dollars',
           description: "The First Million is the Hardest. It's true that it's easier for the rich to get richer. That first million is by far the toughest to make",
           deadline: "12/31/21",
@@ -67,19 +67,19 @@ const defaultState = {
           ]
         },
         {
-          owner: { firstname: 'Sarah', lastname: 'Gury' },
+          author: { firstname: 'Sarah', lastname: 'Gury' },
           name: 'Lorem ipsum dolor sit amet',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           deadline: '06/15/20',
         },
         {
-          owner: { firstname: 'Alexendre', lastname: 'Caroff'},
+          author: { firstname: 'Alexendre', lastname: 'Caroff'},
           name: 'Lorem ipsum dolor sit amet',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           deadline: '06/15/20',
         },
         {
-          owner: { firstname: 'Alexendre', lastname: 'Caroff'},
+          author: { firstname: 'Alexendre', lastname: 'Caroff'},
           name: 'Lorem ipsum dolor sit amet',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           deadline: '06/15/20',
@@ -149,18 +149,21 @@ const defaultState = {
         }
       ]
     },
-    Chat: [
+    chatMessages: [
       {
-        owner: { firstname: 'Alexendre', lastname: 'Caroff'},
-        message: "Hey, just saw your new website, I think it's amazing ! Can we have a visio call sometimes I would like to know what framework did your team used for having such a great css !"
+        author: { firstname: 'Alexendre', lastname: 'Caroff' },
+        text: "Hey, just saw your new website, I think it's amazing ! Can we have a visio call sometimes I would like to know what framework did your team used for having such a great css !",
+        createdAt: '3 minutes ago'
       },
       {
-        owner: { firstname: 'Sarah', lastname: 'Gury' },
-        message: "Yes I know they call me the godess of CSS"
+        author: { firstname: 'Sarah', lastname: 'Gury' },
+        text: "Yes I know they call me the godess of CSS",
+        createdAt: '2 minutes ago'
       },
       {
-        owner: { firstname: 'Alexendre', lastname: 'Caroff'},
-        message: "Ahah it was used to be me !"
+        author: { firstname: 'Alexendre', lastname: 'Caroff' },
+        text: "Ahah it was used to be me !",
+        createdAt: 'few seconds ago'
       },
     ]
   }

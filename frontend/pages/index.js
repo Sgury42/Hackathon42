@@ -3,15 +3,27 @@ import { Typography, useTheme, Grid, Hidden, TextField, Card, CardMedia, CardCon
 import { AnimatedWhenVisible, Banner, BlockLink, MyTypography } from '../components/core'
 import queryString from 'query-string'
 
-const useStyles = makeStyles({
-  media: {
-    height: 300
-  },
-});
+const HomeCard = ({ image, title, text }) => {
+  const theme = useTheme()
+  return (
+    <Card>
+      <CardContent style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <img src={image} style={{ height: 200 }}/>
+        </div>
+        <Typography style={{ marginTop: theme.spacing(1), marginBottom: theme.spacing(2) }} variant="h5" component="h2">
+          {title}
+        </Typography>
+        <Typography align="center" variant="body2" color="textSecondary" paragraph>
+          {text}
+        </Typography>
+      </CardContent>
+    </Card>
+  )
+}
 
 export default () => {
   const theme = useTheme()
-  const classes = useStyles();
   
   return (
     <React.Fragment>
@@ -28,14 +40,14 @@ export default () => {
           left: -30,
           right: -30,
           bottom: 0,
-          transform: 'rotate(2deg)',
+          transform: 'rotate(1deg)',
           background: `linear-gradient(126deg, #04BFA6 0%, rgba(98,137,244,1) 40%, #04BFA6 100%)`
         }}/>
         <div style={{ position: 'relative'}}>
           <AnimatedWhenVisible animation="fromLeft">
             <Grid container alignItems="flex-start">
               <Grid item xs={12} md={6}>
-                <Typography variant="h1" style={{ marginBottom: 8 }}><b>P2P</b><br/>peer 2 peer Mentorship</Typography>
+                <Typography variant="h1" style={{ marginBottom: 8 }}>P2P Mentorship</Typography>
                 <Typography variant="h6" style={{ opacity: .75, marginBottom: 16 }}>
                   Find your peer to peer team to grow your startup stronger and faster.
                 </Typography>
@@ -46,9 +58,9 @@ export default () => {
             </Grid>
           </AnimatedWhenVisible>
           <Hidden smDown>
-            <div style={{ zIndex: 100, position: 'absolute', right: -50, bottom: -150, height: 480 }}>
+            <div style={{ zIndex: 100, position: 'absolute', right: -50, bottom: -350, height: 480 }}>
               <AnimatedWhenVisible animation="fromRight" partially>
-                <img style={{ height: 480 }} src="images/illustrations/undraw_Connecting_Teams_8ntu.svg" alt="Augmenter votre productivité"/>
+                <img style={{ height: 300 }} src="images/illustrations/undraw_shared_workspace_hwky.svg" alt="Augmenter votre productivité"/>
               </AnimatedWhenVisible>
             </div>
           </Hidden>
@@ -56,77 +68,42 @@ export default () => {
       </Banner>
       <Banner
         style={{
-        padding: '100px 0 100px 0',
+        padding: '180px 0 100px 0',
         position: 'relative'
         }}
         textColor="white"
       >
-          <AnimatedWhenVisible animation="fromLeft">
-            <Grid container spacing={3}>
-            <Grid item xs={4}>
-            <Card className={classes.root}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
+          <AnimatedWhenVisible animation="fromLeft" partially>
+            <Grid container justify="center" spacing={2}>
+              <Grid item xs={8} sm={4}>
+                <HomeCard
+                  title="Find team support"
+                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus lectus, dictum a libero a, bibendum fermentum urna. Pellentesque ultricies facilisis nibh nec pulvinar."
                   image="/images/illustrations/undraw_stand_out_1oag.svg"
-                  title="team support"
                 />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Find team support
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-            </Grid>
-            <Grid item xs={4}>
-            <Card className={classes.root}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
+              </Grid>
+              <Grid item xs={8} sm={4}>
+                <HomeCard
+                  title="Find team support"
                   image="/images/illustrations/undraw_status_update_jjgk.svg"
-                  title="Share ideas"
+                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus lectus, dictum a libero a, bibendum fermentum urna. Pellentesque ultricies facilisis nibh nec pulvinar."
                 />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Share your ideas
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-            </Grid>
-            <Grid item xs={4}>
-            <Card className={classes.root}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
+              </Grid>
+              <Grid item xs={8} sm={4}>
+                <HomeCard
+                  title="Find team support"
+                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus lectus, dictum a libero a, bibendum fermentum urna. Pellentesque ultricies facilisis nibh nec pulvinar."
                   image="/images/illustrations/undraw_Group_chat_unwm.svg"
-                  title="accountability" />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Find accountability
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-            </Grid>
+                />
+              </Grid>
             </Grid>
           </AnimatedWhenVisible>
-          <Hidden smDown>
+          {/* <Hidden smDown>
             <div style={{ zIndex: 100, position: 'absolute', right: -50, bottom: -150, height: 480 }}>
               <AnimatedWhenVisible animation="fromRight" partially>
               </AnimatedWhenVisible>
             </div>
-          </Hidden>
+          </Hidden> */}
       </Banner>
     </React.Fragment>
   )

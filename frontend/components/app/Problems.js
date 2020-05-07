@@ -3,45 +3,22 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { useTheme, Container, Grid, Chip, Card, CardContent, TextField, CardHeader, CardActions, Button } from '@material-ui/core'
 import { TextLink, MyTypography, Icon, BlockLink } from '../core'
-import { Avatar } from './'
+import { Avatar, PostItem } from './'
 
 export default () => {
   const problems = useSelector(s => s.objects.group.problems)
   const theme = useTheme()
   return (
     <React.Fragment>
-      <MyTypography variant="h6" style={{ marginBottom: theme.spacing(2) }} medium>😞 Problems</MyTypography>
+      <MyTypography variant="h6" style={{ marginBottom: theme.spacing(1), color: '#f44336' }} medium>😞 Problems</MyTypography>
       <Grid container spacing={1}>
-        {problems.map(problem => (
-          <Grid item xs={12}>
-            <Card>
-              <CardContent>
-                <div style={{ display: 'flex'}}>
-                  <Avatar user={problem.owner}/>
-                  <div style={{ flexGrow: 1, marginLeft: theme.spacing(1.5) }}>
-                    <Grid container spacing={1}>
-                      <Grid item xs={12}>
-                        <MyTypography medium>{problem.name}</MyTypography>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <MyTypography variant="body2">{problem.description}</MyTypography>
-                      </Grid>
-                    </Grid>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+        {problems.map((problem, i) => (
+          <Grid item xs={12} key={i}>
+            <PostItem post={problem}/>
           </Grid>
         ))}
       </Grid>
-      <Grid container spacing={1}>
-        <Grid item xs={12}>
-          <TextField multiline fullWidth label="Explain your problem..." placeHolder=""/>
-        </Grid>
-        <Grid item xs={12}>
-          <Button fullWidth variant="contained" color="primary">Send</Button>
-        </Grid>
-      </Grid>
+      <Button fullWidth variant="contained" color="primary" style={{ marginTop: theme.spacing(1) }}>I have a problem</Button>
     </React.Fragment>
   )
 }

@@ -21,10 +21,10 @@ theme.palette = {
     contrastText: '#fff'
   },
   secondary: {
-    dark: Color('#1bb978').darken(0.1).hex(),
-    main: '#1bb978',
-    light: Color('#1bb978').lighten(0.7).hex(),
-    extraLight: Color('#1bb978').lighten(1.2).hex(),
+    dark: Color('#5491e9').darken(0.1).hex(),
+    main: '#5491e9',
+    light: Color('#5491e9').lighten(0.7).hex(),
+    extraLight: Color('#5491e9').lighten(1.2).hex(),
     contrastText: '#fff'
   },
   tertiary: {
@@ -61,7 +61,7 @@ theme.palette = {
     paper: '#fff'
   },
   text: {
-    primary: 'rgba(0, 0, 0, .8)',
+    primary: '#181818',
     secondary: 'rgba(0, 0, 0, .54)',
     tertiary: 'rgba(0 ,0 ,0, .4)'
   },
@@ -93,32 +93,32 @@ theme.typography = {
   fontWeightMediumTitle: 500,
   fontWeightBoldTitle: 600,
   h1: {
-    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
     fontSize: '3.75rem',
     fontWeight: 400,
   },
   h2: {
-    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
     fontSize: '2.2rem',
     fontWeight: 400,
   },
   h3: {
-    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
     fontSize: '2rem',
     fontWeight: 400,
   },
   h4: {
-    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
     fontSize: '1.8rem',
     fontWeight: 400,
   },
   h5: {
-    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
     fontSize: '1.5rem',
     fontWeight: 400,
   },
   h6: {
-    fontFamily: ['Nunito', 'Arial', 'sans-serif'].join(', '),
+    fontFamily: ['Work Sans', 'Nunito', 'Arial', 'sans-serif'].join(', '),
     fontWeight: 400,
   },
 }
