@@ -128,6 +128,12 @@ export default () => {
             </div>
           </Hidden>
       </Banner>
+      <Banner>
+      <Grid container direction="column">
+        <Grid item>
+        </Grid>
+      </Grid>
+      </Banner>
     </React.Fragment>
   )
 }
