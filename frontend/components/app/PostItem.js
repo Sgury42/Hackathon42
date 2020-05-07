@@ -12,7 +12,7 @@ export default ({ post }) => {
     <Card>
       <CardContent>
         <div style={{ display: 'flex'}}>
-          <Avatar user={post.author}/>
+          <Avatar size={50} user={post.author}/>
           <div style={{ flexGrow: 1, marginLeft: theme.spacing(1.5) }}>
             <Grid container spacing={1}>
               <Grid item xs={12}>
@@ -22,6 +22,9 @@ export default ({ post }) => {
                 <MyTypography variant="body2">{post.description}</MyTypography>
               </Grid>
             </Grid>
+            {post.deadline &&
+              <Chip style={{ marginTop: theme.spacing(1)}} label={`Deadline ${post.deadline}`}/>
+            }
           </div>
         </div>
       </CardContent>

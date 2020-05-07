@@ -12,7 +12,7 @@ export default () => {
     <Container maxWidth={false}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Grid container spacing={1}>
+          <Grid container spacing={2}>
             <Grid item xs={12}>
               <MyTypography variant="h1">{group.name}</MyTypography>
             </Grid>
@@ -27,11 +27,14 @@ export default () => {
                 {group.users.map(user => (
                   <Grid item>
                     <BlockLink href={'/user'}>
-                      <Avatar user={user}/>
+                      <Avatar user={user} size={70}/>
                     </BlockLink>
                   </Grid> 
                 ))}
               </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Button variant="contained" color="primary" startIcon={<Icon name="mdiPhone"/>}>Ask for a new videocall !</Button>
             </Grid>
           </Grid>
         </Grid>
@@ -44,7 +47,7 @@ export default () => {
                   {chatMessages.map((message, i) => (
                     <ListItem divider>
                       <div style={{ display: 'flex' }} key={i}>
-                        <Avatar user={message.author} size={28}/>
+                        <Avatar user={message.author}/>
                         <div style={{ flexGrow: 1, marginLeft: theme.spacing(1.5) }}>
                           <MyTypography variant="body2" bold style={{ marginBottom: theme.spacing(.5) }}>
                             {message.author.firstname}

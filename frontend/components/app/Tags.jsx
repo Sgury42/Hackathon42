@@ -6,7 +6,7 @@ export default ({ tags, ...rest }) => {
     <Grid container spacing={1} {...rest}>
       {tags.map(tag => (
         <Grid item>
-          <Chip label={tag.label} style={{ color: tag.color }}/>
+          <Chip label={tag.label} style={{ backgroundColor: tag.color, color: '#fff' }}/>
         </Grid>
       ))}
     </Grid>
