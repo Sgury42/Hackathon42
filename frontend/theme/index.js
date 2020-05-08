@@ -134,7 +134,7 @@ theme.topSpace = defaultTheme.spacing(5)
 // default props
 theme.props = {
   MuiContainer: {
-    maxWidth: "lg",
+    maxWidth: "md",
     //disableGutters: true
   },
   MuiInput: {

@@ -31,37 +31,28 @@ export default () => {
     <React.Fragment>
       <Banner
         style={{
-          marginTop: -100, padding: '200px 0 120px 0',
+          marginTop: -100, padding: '190px 0 110px 0',
           position: 'relative',
           color: 'white',
           background: `url(/images/network.png) ${theme.palette.secondary.main}`,
         }}
       >
-        {/* <div style={{
-          position:'absolute',
-          top: -80,
-          left: -30,
-          right: -30,
-          bottom: 0,
-          transform: 'rotate(1deg)',
-          background: `linear-gradient(126deg, #04BFA6 0%, rgba(98,137,244,1) 40%, #04BFA6 100%)`
-        }}/> */}
         <div style={{ position: 'relative'}}>
           <AnimatedWhenVisible animation="fromLeft">
             <Grid container alignItems="flex-start">
-              <Grid item xs={12} md={6}>
+              <Grid item xs={12} md={5}>
                 <Typography variant="h1" style={{ marginBottom: 8 }}>Ants.ia</Typography>
                 <Typography variant="h6" style={{ opacity: .75, marginBottom: 16 }}>
-                Connect to entrepreneurs like you to gain 5 years of experience
+                  Connect to entrepreneurs like you and use collective intelligence to gain 5 years of experience
                 </Typography>
-                {/* <BlockLink href="/register"> */}
-                  <Button variant="contained" color="primary" onClick={() => {window.location.href = "https://chat.csml.dev/channels/bikrcjlzr5cjtkd3fltkl6fekbsvzrnb" }}>Find my anthill !</Button>
-                {/* </BlockLink> */}
+                <BlockLink outLink href="https://chat.csml.dev/channels/bikrcjlzr5cjtkd3fltkl6fekbsvzrnb">
+                  <Button variant="contained" color="primary" size="large"><MyTypography variant="h6">Find my anthill !</MyTypography></Button>
+                </BlockLink>
               </Grid>
             </Grid>
           </AnimatedWhenVisible>
           <Hidden smDown>
-            <div style={{ zIndex: 100, position: 'absolute', right: -50, bottom: -150, height: 300 }}>
+            <div style={{ zIndex: 100, position: 'absolute', right: -50, bottom: -140, height: 300 }}>
               <AnimatedWhenVisible animation="fromRight" partially>
                 <img style={{ height: 300 }} src="images/illustrations/undraw_shared_workspace_hwky.svg" alt="Augmenter votre productivité"/>
               </AnimatedWhenVisible>
@@ -83,7 +74,7 @@ export default () => {
                     <Icon name="mdiAccountGroupOutline" size={80} color="primary"/>
                   </div>
                   <MyTypography variant="h2" color="primary" align="center" gutterBottom>Find team support</MyTypography>
-                  <MyTypography align="center">Validate business idead, grow your team, onboard customers … meet 3000+ entrepreneurs who have encountered and solved these isues</MyTypography>
+                  <MyTypography align="center">Validate business idead, grow your team, onboard customers… meet 3000+ entrepreneurs who have encountered and solved these isues</MyTypography>
                 </div>
               </Grid>
               <Grid item xs={6}>
@@ -92,7 +83,7 @@ export default () => {
                     <Icon name="mdiHandshake" size={80} color="primary"/>
                   </div>
                   <MyTypography variant="h2" color="primary" align="center" gutterBottom>Be united</MyTypography>
-                  <MyTypography align="center">A strong community builds upon value : Mutual aid – sharing knowledge - kindness</MyTypography>
+                  <MyTypography align="center">A strong community builds upon values<br/>Mutual aid – sharing knowledge - kindness</MyTypography>
                 </div>
               </Grid>
             </Grid>
@@ -108,11 +99,11 @@ export default () => {
           <AnimatedWhenVisible animation="fromLeft" partially>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
               <div style={{ padding: 20, backgroundColor: theme.palette.secondary.extraLight, borderRadius: '100%' }}>
-                <Icon name="mdiAccountGroupOutline" size={100} color="secondary"/>
+                <Icon name="mdiRocketOutline" size={100} color="secondary"/>
               </div>
-              <div style={{ marginLeft: theme.spacing(5) }}>
-                <MyTypography variant="h2" color="secondary" align="left" gutterBottom>Find team support</MyTypography>
-                <MyTypography style={{ maxWidth: 700 }} align="left">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</MyTypography>
+              <div style={{ marginLeft: theme.spacing(5), maxWidth: 600 }}>
+                <MyTypography variant="h2" color="secondary" align="left" gutterBottom>Why Ants.ia ?</MyTypography>
+                <MyTypography align="left">Because ants share knowledge and work all together in the same direction for a global purpose. </MyTypography>
               </div>
             </div>
           </AnimatedWhenVisible>
@@ -126,28 +117,32 @@ export default () => {
       >
           <AnimatedWhenVisible animation="fromRight" partially>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
-              <div style={{ marginRight: theme.spacing(5) }}>
-                <MyTypography variant="h2" color="primary" align="right" gutterBottom>Find team support</MyTypography>
-                <MyTypography style={{ maxWidth: 700 }} align="right">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</MyTypography>
+              <div style={{ marginRight: theme.spacing(5), maxWidth: 600 }}>
+                <MyTypography variant="h2" color="primary" align="right" gutterBottom>90% of entrepreneur's issues are fixed by other entrepreneurs</MyTypography>
+                <MyTypography align="right">Ants.ia connect entrepreneurs together to make them solve entrepreneur’s issues</MyTypography>
               </div>
               <div style={{ padding: 20, backgroundColor: theme.palette.primary.extraLight, borderRadius: '100%' }}>
-                <Icon name="mdiAccountGroupOutline" size={100} color="primary"/>
+                <Icon name="mdiLightbulbGroupOutline" size={100} color="primary"/>
               </div>
             </div>
           </AnimatedWhenVisible>
       </Banner>
       <Banner
         style={{
-          padding: '100px 0 100px 0',
+          padding: '20px 0 20px 0',
           position: 'relative',
           backgroundColor: theme.palette.contrast.low,
+          overflow: 'hidden'
         }}
       >
-        {/* <Gird container>
-          <div style={{ width: 100, height: 100, borderRadius: '100%'}}>
-            
+        <AnimatedWhenVisible animation="fromBottom">
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+            <img src="/images/illustrations/ant.svg" height="300px" style={{ marginTop: -20, marginBottom: -20 }}/>
+            <div>
+              <Button color="primary" variant="contained" size="large"><MyTypography variant="h3">Find my mates !</MyTypography></Button>
+            </div>
           </div>
-        </Gird> */}
+        </AnimatedWhenVisible>
       </Banner>
       <Banner>
       <Grid container direction="column">
