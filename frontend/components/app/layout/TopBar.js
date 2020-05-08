@@ -11,7 +11,7 @@ export default ({ children }) => {
         <Toolbar variant="dense">
           {/* <Container> */}
             <BlockLink href="/">
-              <MyTypography variant="h6">P2P Mentorship</MyTypography>
+              <MyTypography variant="h6">Ants.ia</MyTypography>
             </BlockLink>
           {/* </Container> */}
         </Toolbar>

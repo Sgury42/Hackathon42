@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+// import { useHistory } from 'react-router-dom'
 import { Typography, useTheme, Grid, Hidden, TextField, Card, CardMedia, CardContent, makeStyles, CardActionArea, CardActions, Button } from '@material-ui/core'
 import { AnimatedWhenVisible, Banner, BlockLink, MyTypography, Icon } from '../components/core'
 import queryString from 'query-string'
@@ -24,6 +25,7 @@ const HomeCard = ({ image, title, text }) => {
 
 export default () => {
   const theme = useTheme()
+  // const history = useHistory()
   
   return (
     <React.Fragment>
@@ -48,13 +50,13 @@ export default () => {
           <AnimatedWhenVisible animation="fromLeft">
             <Grid container alignItems="flex-start">
               <Grid item xs={12} md={6}>
-                <Typography variant="h1" style={{ marginBottom: 8 }}>P2P Mentorship</Typography>
+                <Typography variant="h1" style={{ marginBottom: 8 }}>Ants.ia</Typography>
                 <Typography variant="h6" style={{ opacity: .75, marginBottom: 16 }}>
-                  Find your peer to peer team to grow your startup stronger and faster.
+                Connect to entrepreneurs like you to gain 5 years of experience
                 </Typography>
-                <BlockLink href="/register">
-                  <Button variant="contained" color="primary">Find my team now !</Button>
-                </BlockLink>
+                {/* <BlockLink href="/register"> */}
+                  <Button variant="contained" color="primary" onClick={() => {window.location.href = "https://chat.csml.dev/channels/bikrcjlzr5cjtkd3fltkl6fekbsvzrnb" }}>Find my anthill !</Button>
+                {/* </BlockLink> */}
               </Grid>
             </Grid>
           </AnimatedWhenVisible>
@@ -81,7 +83,7 @@ export default () => {
                     <Icon name="mdiAccountGroupOutline" size={80} color="primary"/>
                   </div>
                   <MyTypography variant="h2" color="primary" align="center" gutterBottom>Find team support</MyTypography>
-                  <MyTypography align="center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</MyTypography>
+                  <MyTypography align="center">Validate business idead, grow your team, onboard customers … meet 3000+ entrepreneurs who have encountered and solved these isues</MyTypography>
                 </div>
               </Grid>
               <Grid item xs={6}>
@@ -89,8 +91,8 @@ export default () => {
                   <div style={{ padding: 20, backgroundColor: theme.palette.primary.extraLight, borderRadius: '100%' }}>
                     <Icon name="mdiHandshake" size={80} color="primary"/>
                   </div>
-                  <MyTypography variant="h2" color="primary" align="center" gutterBottom>Find team support</MyTypography>
-                  <MyTypography align="center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</MyTypography>
+                  <MyTypography variant="h2" color="primary" align="center" gutterBottom>Be united</MyTypography>
+                  <MyTypography align="center">A strong community builds upon value : Mutual aid – sharing knowledge - kindness</MyTypography>
                 </div>
               </Grid>
             </Grid>
