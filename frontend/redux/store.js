@@ -114,12 +114,17 @@ const defaultState = {
         {
           name: 'Sport toward better health',
           description: 'Startups in sport field',
+<<<<<<< HEAD
           users: [{ firstname: 'John', lastname: 'Doe', image: '/images/team/yama.jpg' }, { firstname: 'Yama', lastname: 'Saraj' }, { firstname: 'Jessica', lastname: 'Jones' }, { firstname: 'Alexendre', lastname: 'Caroff', image: '/images/team/alexis.jpg' }],
+=======
+          users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Yama', lastname: 'Saraj' }, { firstname: 'Jessica', lastname: 'Jones' }, { firstname: 'Alexendre', lastname: 'Caroff' }],
+>>>>>>> 872726fcfde9c8c6c5cede948b6cd1d997104458
           tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Workout', color: '#786fa6'}]
         },
         {
           name: 'Lorem ipsum dolor sit amet',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
+<<<<<<< HEAD
           users: [{ firstname: 'John', lastname: 'Doe', image: '/images/team/yama.jpg' }, { firstname: 'Sarah', lastname: 'Gury', image: '/images/team/sandra.jpg' }],
           tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Javascript', color: '#f5cd79' }]
         },
@@ -128,23 +133,47 @@ const defaultState = {
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
           users: [{ firstname: 'John', lastname: 'Doe', image: '/images/team/yama.jpg' }, { firstname: 'Sarah', lastname: 'Gury', image: '/images/team/sandra.jpg' }],
           tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Pharmacy', color: '#63cdda'}, { label: 'ReactJs', color: '#e66767' }, { label: 'Javascript', color: '#f5cd79' }]
+=======
+          users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
+          tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Javascript', color: '#f5cd79' }]
+>>>>>>> 872726fcfde9c8c6c5cede948b6cd1d997104458
         },
         {
           name: 'Lorem ipsum dolor sit amet',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
+<<<<<<< HEAD
           users: [{ firstname: 'John', lastname: 'Doe', image: '/images/team/yama.jpg' }, { firstname: 'Sarah', lastname: 'Gury', image: '/images/team/sandra.jpg' }],
           tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'ReactJs', color: '#e66767' }, { label: 'Javascript', color: '#f5cd79' }]
+=======
+          users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
+          tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Pharmacy', color: '#63cdda'}, { label: 'ReactJs', color: '#e66767' }, { label: 'Javascript', color: '#f5cd79' }]
+>>>>>>> 872726fcfde9c8c6c5cede948b6cd1d997104458
         },
         {
           name: 'Lorem ipsum dolor sit amet',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
+<<<<<<< HEAD
           users: [{ firstname: 'John', lastname: 'Doe', image: '/images/team/yama.jpg' }, { firstname: 'Sarah', lastname: 'Gury', image: '/images/team/sandra.jpg' }, { firstname: 'John', lastname: 'Doe', image: '/images/team/yama.jpg' }],
+          tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Sport', color: '#574b90'}, { label: 'Javascript', color: '#f5cd79' }]
+=======
+          users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
+          tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'ReactJs', color: '#e66767' }, { label: 'Javascript', color: '#f5cd79' }]
+>>>>>>> 872726fcfde9c8c6c5cede948b6cd1d997104458
+        },
+        {
+          name: 'Lorem ipsum dolor sit amet',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
+<<<<<<< HEAD
+          users: [{ firstname: 'John', lastname: 'Doe', image: '/images/team/yama.jpg' }, { firstname: 'Sarah', lastname: 'Gury', image: '/images/team/sandra.jpg' }],
+=======
+          users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }, { firstname: 'John', lastname: 'Doe' }],
           tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Sport', color: '#574b90'}, { label: 'Javascript', color: '#f5cd79' }]
         },
         {
           name: 'Lorem ipsum dolor sit amet',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec turpis varius mi iaculis venenatis. Nulla sed orci felis. Fusce euismod nisl turpis, nec aliquet turpis lobortis in.',
-          users: [{ firstname: 'John', lastname: 'Doe', image: '/images/team/yama.jpg' }, { firstname: 'Sarah', lastname: 'Gury', image: '/images/team/sandra.jpg' }],
+          users: [{ firstname: 'John', lastname: 'Doe' }, { firstname: 'Sarah', lastname: 'Gury' }],
+>>>>>>> 872726fcfde9c8c6c5cede948b6cd1d997104458
           tags: [{ label: 'Health', color: '#3dc1d3'}, { label: 'Pharmacy', color: '#63cdda'}, { label: 'Javascript', color: '#f5cd79' }]
         }
       ]
