@@ -35,7 +35,7 @@
     "moment": "^2.24.0",
     "mongoose": "^5.9.7",
     "mongoose-url-slugs": "^1.0.2",
-    "next": "^9.2.1",
+    "next": "^11.1.0",
     "next-redux-wrapper": "^4.0.1",
     "notistack": "^0.9.7",
     "overlayscrollbars": "^1.12.0",
