@@ -28,7 +28,7 @@
     "googleapis": "^47.0.0",
     "isomorphic-unfetch": "^3.0.0",
     "js-cookie": "^2.2.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.15",
     "markdown-to-jsx": "^6.11.0",
     "mdi-material-ui": "^6.12.0",
